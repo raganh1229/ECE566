@@ -1,15 +1,13 @@
 services:
   - docker
 
-language: cpp
+language: minimal
 
 os:
   - linux
-#  - osx
-#  - windows
 
-compiler:
-  - clang
+#compiler:
+#  - clang
 
 install:
   - docker-compose build
