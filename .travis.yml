@@ -13,8 +13,8 @@ install:
   - docker build -t ece566test - < Dockerfile.travis
 
 script:
-  - docker run -v `pwd`:/ece566 ece566test /bin/bash travis-ci-test.sh  
+  - docker run -v `pwd`:/ece566 ece566test /bin/bash travis-ci-test.sh
 
 after_script:
-  - docker container prune
-  - docker image prune
+  - docker container prune -f
+  - docker image prune -f
