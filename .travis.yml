@@ -10,12 +10,11 @@ os:
 #  - clang
 
 install:
-  - docker-compose build
-  - docker-compose up 
+  - docker build -t ece566test - < Dockerfile.travis
+  - docker run -v `pwd`:/ece566 ece566test /bin/bash travis-ci-test.sh  
 
-script: 
-  - docker-compose run ece566 bash ./travis-ci-test.sh
+script:
+  - /bin/bash travis-ci-test.sh  
 
 after_script:
-  - docker-compose stop
-  - docker-compose rm -f
+  - docker image rm ece566test 
