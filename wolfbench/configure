@@ -1791,7 +1791,7 @@ else
   ;;
   *)
   as_save_IFS=$IFS; IFS=$PATH_SEPARATOR
-for as_dir in $PATH$PATH_SEPARATOR/usr/ece566/install/bin/$PATH_SEPARATOR/usr/local/bin
+for as_dir in $PATH$PATH_SEPARATOR/usr/local/opt/llvm/bin/$PATH_SEPARATOR/usr/local/bin
 do
   IFS=$as_save_IFS
   test -z "$as_dir" && as_dir=.
@@ -1805,7 +1805,7 @@ done
   done
 IFS=$as_save_IFS
 
-  test -z "$ac_cv_path_CLANG" && ac_cv_path_CLANG="clang-11"
+  test -z "$ac_cv_path_CLANG" && ac_cv_path_CLANG="clang"
   ;;
 esac
 fi
@@ -1832,7 +1832,7 @@ else
   ;;
   *)
   as_save_IFS=$IFS; IFS=$PATH_SEPARATOR
-for as_dir in $PATH$PATH_SEPARATOR/usr/ece566/install/bin/$PATH_SEPARATOR/usr/local/bin
+for as_dir in $PATH$PATH_SEPARATOR/usr/local/opt/llvm/bin/$PATH_SEPARATOR/usr/local/bin
 do
   IFS=$as_save_IFS
   test -z "$as_dir" && as_dir=.
@@ -1846,7 +1846,7 @@ done
   done
 IFS=$as_save_IFS
 
-  test -z "$ac_cv_path_CLANGXX" && ac_cv_path_CLANGXX="clang++-11"
+  test -z "$ac_cv_path_CLANGXX" && ac_cv_path_CLANGXX="clang++"
   ;;
 esac
 fi
@@ -1873,7 +1873,7 @@ else
   ;;
   *)
   as_save_IFS=$IFS; IFS=$PATH_SEPARATOR
-for as_dir in $PATH$PATH_SEPARATOR/usr/ece566/install/bin/$PATH_SEPARATOR/usr/local/bin
+for as_dir in $PATH$PATH_SEPARATOR/usr/local/opt/llvm/bin/$PATH_SEPARATOR/usr/local/bin
 do
   IFS=$as_save_IFS
   test -z "$as_dir" && as_dir=.
@@ -1887,7 +1887,7 @@ done
   done
 IFS=$as_save_IFS
 
-  test -z "$ac_cv_path_OPT" && ac_cv_path_OPT="opt-11"
+  test -z "$ac_cv_path_OPT" && ac_cv_path_OPT="opt"
   ;;
 esac
 fi
@@ -1914,7 +1914,7 @@ else
   ;;
   *)
   as_save_IFS=$IFS; IFS=$PATH_SEPARATOR
-for as_dir in $PATH$PATH_SEPARATOR/usr/ece566/install/bin/$PATH_SEPARATOR/usr/local/bin
+for as_dir in $PATH$PATH_SEPARATOR/usr/local/opt/llvm/bin/$PATH_SEPARATOR/usr/local/bin
 do
   IFS=$as_save_IFS
   test -z "$as_dir" && as_dir=.
@@ -1928,7 +1928,7 @@ done
   done
 IFS=$as_save_IFS
 
-  test -z "$ac_cv_path_LLVM_LINK" && ac_cv_path_LLVM_LINK="llvm-link-11"
+  test -z "$ac_cv_path_LLVM_LINK" && ac_cv_path_LLVM_LINK="llvm-link"
   ;;
 esac
 fi
@@ -1955,7 +1955,7 @@ else
   ;;
   *)
   as_save_IFS=$IFS; IFS=$PATH_SEPARATOR
-for as_dir in $PATH$PATH_SEPARATOR/usr/ece566/install/bin/$PATH_SEPARATOR/usr/local/bin
+for as_dir in $PATH$PATH_SEPARATOR/usr/local/opt/llvm/bin/$PATH_SEPARATOR/usr/local/bin
 do
   IFS=$as_save_IFS
   test -z "$as_dir" && as_dir=.
@@ -1969,7 +1969,7 @@ done
   done
 IFS=$as_save_IFS
 
-  test -z "$ac_cv_path_LLVM_DIS" && ac_cv_path_LLVM_DIS="llvm-dis-11"
+  test -z "$ac_cv_path_LLVM_DIS" && ac_cv_path_LLVM_DIS="llvm-dis"
   ;;
 esac
 fi
@@ -1996,7 +1996,7 @@ else
   ;;
   *)
   as_save_IFS=$IFS; IFS=$PATH_SEPARATOR
-for as_dir in $PATH$PATH_SEPARATOR/usr/ece566/install/bin/$PATH_SEPARATOR/usr/local/bin
+for as_dir in $PATH$PATH_SEPARATOR/usr/local/opt/llvm/bin/$PATH_SEPARATOR/usr/local/bin
 do
   IFS=$as_save_IFS
   test -z "$as_dir" && as_dir=.
@@ -2010,7 +2010,7 @@ done
   done
 IFS=$as_save_IFS
 
-  test -z "$ac_cv_path_LLVM_CONFIG" && ac_cv_path_LLVM_CONFIG="llvm-config-11"
+  test -z "$ac_cv_path_LLVM_CONFIG" && ac_cv_path_LLVM_CONFIG="llvm-config"
   ;;
 esac
 fi
@@ -2037,7 +2037,7 @@ else
   ;;
   *)
   as_save_IFS=$IFS; IFS=$PATH_SEPARATOR
-for as_dir in $PATH$PATH_SEPARATOR/usr/ece566/install/bin/$PATH_SEPARATOR/usr/local/bin
+for as_dir in $PATH$PATH_SEPARATOR/usr/local/opt/llvm/bin/$PATH_SEPARATOR/usr/local/bin
 do
   IFS=$as_save_IFS
   test -z "$as_dir" && as_dir=.
@@ -2051,7 +2051,7 @@ done
   done
 IFS=$as_save_IFS
 
-  test -z "$ac_cv_path_LLC" && ac_cv_path_LLC="llc-11"
+  test -z "$ac_cv_path_LLC" && ac_cv_path_LLC="llc"
   ;;
 esac
 fi
@@ -2078,7 +2078,7 @@ else
   ;;
   *)
   as_save_IFS=$IFS; IFS=$PATH_SEPARATOR
-for as_dir in $PATH$PATH_SEPARATOR/usr/ece566/install/bin/$PATH_SEPARATOR/usr/local/bin
+for as_dir in $PATH$PATH_SEPARATOR/usr/local/opt/llvm/bin/$PATH_SEPARATOR/usr/local/bin
 do
   IFS=$as_save_IFS
   test -z "$as_dir" && as_dir=.
@@ -2092,7 +2092,7 @@ done
   done
 IFS=$as_save_IFS
 
-  test -z "$ac_cv_path_LLVMAS" && ac_cv_path_LLVMAS="llvm-as-11"
+  test -z "$ac_cv_path_LLVMAS" && ac_cv_path_LLVMAS="llvm-as"
   ;;
 esac
 fi
