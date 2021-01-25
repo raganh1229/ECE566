@@ -12,5 +12,5 @@ ADD_FLEX_BISON_DEPENDENCY(Scanner Parser)
 
 include_directories(.)
 
-add_executable(t1 expr.y.cpp expr.lex.cpp)
+add_executable(t1 ${BISON_Parser_OUTPUTS} ${FLEX_Scanner_OUTPUTS})
 target_link_libraries(t1 y l)

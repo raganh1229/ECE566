@@ -1,7 +1,7 @@
 .PHONY: all clean
 
 CXX = g++
-CXXFLAGS = -std=c++11 -Wall -Wno-deprecated-register -Wno-unneeded-internal-declaration \
+CXXFLAGS = -g -std=c++11 -Wall -Wno-deprecated-register -Wno-unneeded-internal-declaration \
            -Wno-unused-function
 
 all:

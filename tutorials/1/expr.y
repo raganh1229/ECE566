@@ -26,15 +26,13 @@ std::string format( const std::string& format, Args ... args )
     snprintf( buf.get(), size, format.c_str(), args ... );
     return std::string( buf.get(), buf.get() + size - 1 ); // We don't want the '\0' inside
 }
-
- 
 %}
 
-%token NONE
+%debug
 
 %%
 
-NONE2: NONE
+do_nothing:
 ;
 
 %%
