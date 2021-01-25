@@ -2,8 +2,7 @@
 #include <stdio.h>
 #include <iostream>
 #include <math.h>
-#include "expr.y.hpp"
-
+#include "expr.y.hpp" 
 %}
 
 %option debug
@@ -13,7 +12,7 @@
 
 [ \n\t]  // ignore a space, a tab, a newline
 
-[Rr][0-7]
+[Rr][0-7] { }
 [0-9]+
 "="
 ;
