@@ -9,15 +9,14 @@
 %option debug
 %option noyywrap
 
-
 %% // begin tokens
 
 [ \n\t]  // ignore a space, a tab, a newline
 
-[Rr][0-7]  
-[0-9]+     
-"="        
-;          
+[Rr][0-7]
+[0-9]+
+"="
+;
 "("        
 ")"        
 "["        

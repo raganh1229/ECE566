@@ -28,12 +28,12 @@ std::string format( const std::string& format, Args ... args )
 }
 %}
 
-%debug
+%verbose
+%define parse.trace
 
 %%
 
-do_nothing:
-;
+do_nothing: ;
 
 %%
 
@@ -44,11 +44,8 @@ void yyerror(const char* msg)
 
 int main(int argc, char *argv[])
 {
+  yydebug = 0;
   yyin = stdin;
-
-  // We'll just read in tokens at first, then we'll fix this to call yyparse() later on.
-  while(1)
-    yylex();
-  
+  yyparse();
   return 0;
 }
