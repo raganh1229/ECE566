@@ -118,6 +118,12 @@ int main(int argc, char *argv[])
 {
   yydebug = 0;
   yyin = stdin;
-  yyparse();
+
+  if (yyparse() == 0)
+  {
+
+  } else {
+    printf("There was a problem! Read the error messages.");
+  }
   return 0;
 }
