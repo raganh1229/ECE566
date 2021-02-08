@@ -29,6 +29,7 @@ using namespace std;
 
 static LLVMContext TheContext;
 static IRBuilder<> Builder(TheContext);
+static Function *TheFunction;
 
 extern FILE *yyin;
 int yylex();
@@ -119,12 +120,12 @@ int main(int argc, char *argv[])
       FunctionType::get(Builder.getInt32Ty(),false);
 
   // Create a main function
-  Function *Function = Function::Create(FunType,
+  TheFunction = Function::Create(FunType,
                  GlobalValue::ExternalLinkage, "main",M);
 
   //Add a basic block to main to hold instructions
   BasicBlock *BB = BasicBlock::Create(TheContext, "entry",
-                                    Function);
+                                    TheFunction);
 
   // Ask builder to place new instructions at end of the
   // basic block
